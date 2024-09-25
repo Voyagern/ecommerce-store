@@ -7,7 +7,7 @@ import getProducts from "@/actions/get-products";
 import ProductList from "@/components/product-list";
 
 const HomePage = async () => {
-    const products=await getProducts({isFutured:true})
+    const products=await getProducts({isFutured:"true"})
     const billboard = await getBillboard("d3e76163-e5e5-46a8-a68d-9e254d69fe73");
 
     return (
