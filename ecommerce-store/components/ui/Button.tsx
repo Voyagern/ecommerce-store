@@ -10,8 +10,11 @@ extends React.ButtonHTMLAttributes<HTMLButtonElement>{
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
     className,
     children,
+                                                               // eslint-disable-next-line @typescript-eslint/no-unused-vars
     disabled,
+                                                               // eslint-disable-next-line @typescript-eslint/no-unused-vars
     type="button",
+
     ...props
 }, ref)=>{
     return(
